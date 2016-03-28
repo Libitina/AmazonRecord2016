@@ -1,0 +1,1081 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 10pt;}
+.ln {text-align: right; word-break: keep-all; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top;}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #3399ff; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #3399ff; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #3399ff; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #3399ff; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #3399ff; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #3399ff; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #3399ff; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #3399ff; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #3399ff; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #3399ff; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #3399ff; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #3399ff; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #3399ff; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">2015\amazon_record.ts</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">2016\amazon_record.ts</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">// Amazonの注文履歴をTSV形式で出力するスクリプト</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">// Amazonの注文履歴をTSV形式で出力するスクリプト</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">//</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">//</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">// 2015-01-01 時点での DOM 構造に対応, GoogleCrome, Opera でテスト済。</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">// 2015-01-01 時点での DOM 構造に対応, GoogleCrome, Opera でテスト済。</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">// formatEntry関数を書き換えれば自由な書式で出力できます。</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">// formatEntry関数を書き換えれば自由な書式で出力できます。</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">//</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">//</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">// 参考:</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">// 参考:</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">// &nbsp;- Amazonの注文履歴をCSV形式にして出力するスクリプト</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">// &nbsp;- Amazonの注文履歴をCSV形式にして出力するスクリプト</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">// &nbsp; &nbsp;https://gist.github.com/arcatdmz/8500521</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">// &nbsp; &nbsp;https://gist.github.com/arcatdmz/8500521</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">// &nbsp;- Amazon で使った金額の合計を出す奴 (2014 年バージョン)</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">// &nbsp;- Amazon で使った金額の合計を出す奴 (2014 年バージョン)</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">// &nbsp; &nbsp;https://gist.github.com/polamjag/866a8af775c44b3c1a6d</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">// &nbsp; &nbsp;https://gist.github.com/polamjag/866a8af775c44b3c1a6d</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">11</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">11</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">(function () {</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">(function () {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">13</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">13</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// 各注文履歴をTSVフォーマットにして返す</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// 各注文履歴をTSVフォーマットにして返す</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var datePattern = new RegExp("(\\d{4})年(\\d{1,2})月(\\d{1,2})日");</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var datePattern = new RegExp("(\\d{4})年(\\d{1,2})月(\\d{1,2})日");</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;function formatEntry(entry) {</span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;function formatEntry(entry) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;console.log(entry);</span></code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;console.log(entry);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;entry.date.match(datePattern);</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;entry.date.match(datePattern);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var year = RegExp.$1;</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var year = RegExp.$1;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var month = RegExp.$2; if (month.length &lt;= 1) month = "0" + month;</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var month = RegExp.$2; if (month.length &lt;= 1) month = "0" + month;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var day = RegExp.$3; if (day.length &lt;= 1) day = "0" + day;</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var day = RegExp.$3; if (day.length &lt;= 1) day = "0" + day;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var date = "" + year + "/" + month + "/" + day;</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var date = "" + year + "/" + month + "/" + day;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">23</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;var arr = [date, entry.name, entry.</span><span class="sf17b16">author</span><span style="color: #000000; background-color: #efcb05; ">, entry.url];</span></code></td>
+<td class="ln">23</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;var arr = [date, entry.name, entry.</span><span class="sf17b16">price</span><span style="color: #000000; background-color: #efcb05; ">, entry.url];</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return arr.join('\t') + "\n";</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return arr.join('\t') + "\n";</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">26</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">26</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;function popup(content) {</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;function popup(content) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var generator = window.open('', 'name', 'height=250,width=700');</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var generator = window.open('', 'name', 'height=250,width=700');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;html&gt;&lt;head&gt;&lt;title&gt;Amazon to TSV&lt;/title&gt;');</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;html&gt;&lt;head&gt;&lt;title&gt;Amazon to TSV&lt;/title&gt;');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;/head&gt;&lt;body&gt;');</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;/head&gt;&lt;body&gt;');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;pre&gt;');</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;pre&gt;');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write(content);</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write(content);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;/pre&gt;');</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;/pre&gt;');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;/body&gt;&lt;/html&gt;');</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.write('&lt;/body&gt;&lt;/html&gt;');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.close();</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;generator.document.close();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return generator;</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return generator;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">38</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">38</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var itemDelimiter = " / ";</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var itemDelimiter = " / ";</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var total = {};</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var total = {};</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">41</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;var year = '201</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">';</span></code></td>
+<td class="ln">41</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;var year = '201</span><span class="sf17b16">6</span><span style="color: #000000; background-color: #efcb05; ">';</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">42</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;var nyear</span><span class="sf17b18">:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">number</span><span style="color: #000000; background-color: #efcb05; "> = 201</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+<td class="ln">42</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;var nyear</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">= 201</span><span class="sf17b16">6</span><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var all = false;</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var all = false;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">44</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">44</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;function init(num : number) {</span></code></td>
+<td class="ln">45</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;function init(num : number) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if (typeof num !== 'number') {</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if (typeof num !== 'number') {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var num = 0;</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var num = 0;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$('&lt;div/&gt;').css({</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$('&lt;div/&gt;').css({</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;position: 'fixed',</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;position: 'fixed',</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;left: 0,</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;left: 0,</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;top: 0,</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;top: 0,</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;width: '100%',</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;width: '100%',</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;height: '100%',</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;height: '100%',</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;zIndex: 1000,</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;zIndex: 1000,</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;backgroundColor: 'rgba(0,0,0,.7)',</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;backgroundColor: 'rgba(0,0,0,.7)',</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;color: '#fff',</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;color: '#fff',</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fontSize: 30,</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fontSize: 30,</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;textAlign: 'center',</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;textAlign: 'center',</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;paddingTop: '15em'</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;paddingTop: '15em'</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}).attr('id', '___overlay').text('Amazonいくら使った？').appendTo('body');</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}).attr('id', '___overlay').text('Amazonいくら使った？').appendTo('body');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;year = window.prompt('何年分の注文を集計しますか？\n - 半角数字4桁で入力してください\n - 全期間を集計する場合は「all」と入力します', year);</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;year = window.prompt('何年分の注文を集計しますか？\n - 半角数字4桁で入力してください\n - 全期間を集計する場合は「all」と入力します', year);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (year === 'all') {</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (year === 'all') {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;all = true;</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;all = true;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;year = jQuery('div.top-controls select option:last').val().match(/[0-9]/g).join('');</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;year = jQuery('div.top-controls select option:last').val().match(/[0-9]/g).join('');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} else if (!/^[0-9]{4}$/.test(year)) {</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} else if (!/^[0-9]{4}$/.test(year)) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;alert('正しい数値を入力してください');</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;alert('正しい数値を入力してください');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$('#___overlay').remove();</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$('#___overlay').remove();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return false;</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return false;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;nyear = Number(year);</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;nyear = Number(year);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 第二引数を true にすると各商品とかエラーを逐一表示する</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 第二引数を true にすると各商品とかエラーを逐一表示する</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var progress = load(num, false);</span></code></td>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var progress = load(num, false);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;$('#___overlay').text(nyear + '年の集計中… &nbsp;/ ' + (num + 1) + 'ページ目');</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;$('#___overlay').text(nyear + '年の集計中… &nbsp;/ ' + (num + 1) + 'ページ目');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;progress.done(function (results) {</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;progress.done(function (results) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (typeof total[nyear] === 'undefined') {</span></code></td>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (typeof total[nyear] === 'undefined') {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;total[nyear] = results;</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;total[nyear] = results;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} else {</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} else {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;total[nyear] = total[nyear].concat(results);</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;total[nyear] = total[nyear].concat(results);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;init(num + 1);</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;init(num + 1);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}).fail(function () {</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}).fail(function () {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (all &amp;&amp; new Date().getFullYear() &gt; nyear) {</span></code></td>
+<td class="ln">83</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (all &amp;&amp; new Date().getFullYear() &gt; nyear) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;nyear++;</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;nyear++;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;init(0);</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;init(0);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} else {</span></code></td>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} else {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var _total = 0;</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var _total = 0;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var _content = "";</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var _content = "";</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;jQuery.each(total, function (nyear, results) {</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;jQuery.each(total, function (nyear, results) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var yen = 0;</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var yen = 0;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;jQuery.each(results, function () {</span></code></td>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;jQuery.each(results, function () {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;yen += this.price;</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;yen += this.price;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$.each(this.items, function (i, item) {</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$.each(this.items, function (i, item) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;_content += formatEntry(item);</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;_content += formatEntry(item);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;_total += yen;</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;_total += yen;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// result</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// result</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$('#___overlay').remove();</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$('#___overlay').remove();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;alert('合計 ' + _total + ' 円');</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;alert('合計 ' + _total + ' 円');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;popup(_content);</span></code></td>
+<td class="ln">102</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;popup(_content);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log('合計 ' + _total + ' 円');</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log('合計 ' + _total + ' 円');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">107</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">107</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">108</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;function </span><span class="sf17b16">load(num</span><span style="color: #000000; background-color: #efcb05; ">: </span><span class="sf17b16">number</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">verbose</span><span style="color: #000000; background-color: #efcb05; ">: </span><span class="sf17b16">boolean)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">{</span>&nbsp;</code></td>
+<td class="ln">108</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;function </span><span class="sf17b16">parsePage(data</span><span style="color: #000000; background-color: #efcb05; ">: </span><span class="sf17b16">string</span><span style="color: #000000; background-color: #efcb05; ">, </span><span class="sf17b16">results</span><span style="color: #000000; background-color: #efcb05; ">: </span><span class="sf17b16">any[],</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">lnks:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">any[],</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">verbose:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">boolean)</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">{</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">109</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">df</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">jQuery.Deferred();</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">110</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">page</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">get(num,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">verbose);</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">111</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">page.done(function</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(data</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">string)</span><span style="color: #000000; background-color: #efcb05; "> {</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var dom = jQuery.parseHTML(data);</span></code></td>
+<td class="ln">109</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var dom = jQuery.parseHTML(data);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">113</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var results = [];</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">114</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">110</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;jQuery(dom).find('div.order').each(function () {</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;jQuery(dom).find('div.order').each(function () {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var box = jQuery(this);</span></code></td>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var box = jQuery(this);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">113</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var emphasis = jQuery(box.find("a.a-link-emphasis"));</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">114</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (emphasis.length &gt; 0) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">115</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var path = emphasis.attr('href').trim().replace('/ref=/', '');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">116</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var lnk = 'https://www.amazon.co.jp' + path;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">117</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;lnks.push(lnk);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">118</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} else {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var dateText = jQuery(box.find('div.order-info span.value')[0]).text().trim();</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var dateText = jQuery(box.find('div.order-info span.value')[0]).text().trim();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">118</td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var items = [];</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var items = [];</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var item = {};</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var item = {};</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var pubarr = box.find("div.a-row &gt; span.a-size-small");</span></code></td>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var pubarr = box.find("div.a-row &gt; span.a-size-small");</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;box.find("div.a-row &gt; a.a-link-normal").each(function (j) {</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;box.find("div.a-row &gt; a.a-link-normal").each(function (j) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item = {};</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item = {};</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['name'] = $(this).text().trim();</span></code></td>
+<td class="ln">125</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['name'] = $(this).text().trim();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">125</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['path'] = $(this).attr('href').trim()</span><span class="sf17b16">;</span>&nbsp;</code></td>
+<td class="ln">126</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['path'] = $(this).attr('href').trim()</span><span class="sf17b16">.replace(/ref=.*/,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'');</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['url'] = 'https://www.amazon.co.jp' + item['path'];</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['url'] = 'https://www.amazon.co.jp' + item['path'];</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['date'] = dateText;</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['date'] = dateText;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">128</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['author'] = $(pubarr[j * 2]).text().trim().replace(/(\n)/g, '')</span><span class="sf17b16">;</span>&nbsp;</code></td>
+<td class="ln">129</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['author'] = $(pubarr[j * 2]).text().trim().replace(/(\n)/g, '')</span><span class="sf17b16">.replace(/</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">+/g,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">');</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">129</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; ">item['price'] = $(this).parent().parent().</span><span class="sf17b16">parent().parent().parent().parent().parent().parent().parent()<wbr>.parent().parent().find(".order-info").find(".a-span2").find(".a-size-base").find(".valu<wbr></span><span style="color: #000000; background-color: #efcb05; ">e").text().trim();</span></code></td>
+<td class="ln">130</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;item['price'] = $(this).parent().parent().</span><span class="sf17b16">find("span.a-color-pric</span><span style="color: #000000; background-color: #efcb05; ">e").text().trim();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;items.push(item);</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;items.push(item);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">132</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">133</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var priceText = jQuery(box.find('div.order-info span.value')[1]).text();</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var priceText = jQuery(box.find('div.order-info span.value')[1]).text();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var price = Number(priceText.match(/[0-9]/g).join(''));</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var price = Number(priceText.match(/[0-9]/g).join(''));</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">135</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">136</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">136</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (verbose) console.log(item, price);</span></code></td>
+<td class="ln">137</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (verbose)</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">138</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(item, price);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;results.push({ 'date': dateText, 'items': items, 'price': price });</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;results.push({ 'date': dateText, 'items': items, 'price': price });</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">140</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">142</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">139</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">143</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">140</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">if</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">(results.length</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">&lt;=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">0)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">df.reject();</span>&nbsp;</code></td>
+<td class="ln">144</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b16">function</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">parsePage2(data:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">string,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">results:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">any[],</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">verbose:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">boolean)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">141</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">else</span><span style="color: #000000; background-color: #efcb05; "> d</span><span class="sf17b16">f.resolve(results);</span>&nbsp;</code></td>
+<td class="ln">145</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">var</span><span style="color: #000000; background-color: #efcb05; "> d</span><span class="sf17b16">om</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">jQuery.parseHTML(data);</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">146</td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">147</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dateText</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">jQuery(dom).find('span.order-date-invoice-item').first().text().trim();</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">148</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">items</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[];</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">149</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">item</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{};</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">150</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">jQuery(dom).find('div.shipment-is-delivered').each(function</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">()</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">151</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">box</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">jQuery(this);</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">152</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">pubarr</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">box.find("div.a-spacing-base");</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">153</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">box.find("div.a-row</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a.a-link-normal").each(function</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(j)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">154</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">item</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{};</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">155</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">item['name']</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">$(this).text().trim();</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">156</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">//item['path']</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">$(this).attr('href').trim();</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">157</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">item['path']</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">$(this).attr('href').trim().replace(/ref=.*/,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'');</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">158</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">item['url']</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'https://www.amazon.co.jp'</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">+</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">item['path'];</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">159</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">item['date']</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dateText;</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">160</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">item['author']</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">$(pubarr[j</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">*</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">2]).text().trim().replace(/(\n)/g,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'').replace(/</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">+/g,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">');</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">161</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">item['price']</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">$(this).parent().parent().find("span.a-color-price").text().trim();</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">162</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">items.push(item);</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">163</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">});</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">164</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">});</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">165</td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">166</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">priceText</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">jQuery(dom).find('div.a-first</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">div.a-fixed-right-grid-inner</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">div.a-span-last</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">span.a-text-bold').text();</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">167</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">price</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Number(priceText.match(/[0-9]/g).join(''));</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">168</td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">169</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">if</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(verbose)</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">170</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">console.log(item,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">price);</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">171</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">results.push({</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'date':</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dateText,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'items':</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">items,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'price':</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">price</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">});</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">172</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">}</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">173</td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">174</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span><span class="sf17b18">function</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">load(num:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">number,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">verbose:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">boolean)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">175</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">df</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">jQuery.Deferred();</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">176</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">results</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[];</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">177</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">lnks</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[];</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">178</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">page</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">get(num,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">verbose);</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">179</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">page.done(function</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(data:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">string)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">180</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">parsePage(data,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">results,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">lnks,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">verbose);</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">181</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dfunc</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">function</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(url)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">182</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">df2</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">jQuery.Deferred();</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">183</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">get_url(url,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">verbose)</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">184</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">.done(function</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(data:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">string)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">185</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">parsePage2(data,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">results,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">verbose);</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">186</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">df2.resolve();</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">187</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">});</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">188</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">return</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">df2.promise();</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">189</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">};</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">190</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dlist</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[];</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">191</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">url</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">lnks)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">192</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">dlist.push(dfunc(url));</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">193</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">}</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">194</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">var</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dwhen</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">jQuery.when.apply(null,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dlist);</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">195</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">196</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">dwhen.done(function</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">()</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">197</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">if</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(results.length</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;=</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">0)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">df.reject();</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">}</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">198</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">else</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">{</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">df.resolve(results);</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">}</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+<td class="ln">199</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">200</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">201</td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return df.promise();</span></code></td>
+<td class="ln">202</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return df.promise();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">203</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">145</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">204</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;function get(num: number, verbose: boolean) {</span></code></td>
+<td class="ln">205</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;function get(num: number, verbose: boolean) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">206</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;var url = 'https://www.amazon.co.jp/gp/css/order-history?digitalOrders=1&amp;unifiedOrders=1&amp;orderFilt<wbr>er=year-' + year + '&amp;startIndex=' + num * 10;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">207</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;return get_url(url, verbose);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">208</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">209</td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">210</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;function get_url(strUrl: string, verbose: boolean) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var df = jQuery.Deferred();</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var df = jQuery.Deferred();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;jQuery.ajax({</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;jQuery.ajax({</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">149</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;url: </span><span class="sf17b16">'https://www.amazon.co.jp/gp/css/order-history?digitalOrders=1&amp;unifiedOrders=1&amp;orderFilt<wbr>er=year-'</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">+</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">year</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">+</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">'&amp;startIndex='</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">+</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">num</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">*</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">10,</span>&nbsp;</code></td>
+<td class="ln">213</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;url: </span><span class="sf17b16">strUrl,</span>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;beforeSend: function (xhr) {</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;beforeSend: function (xhr) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">151</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//xhr.setRequestHeader('X-Requested-With', { toString: function () { return ''; } });</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;function toString(): string{ return ''; }</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;function toString(): string { return ''; }</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;xhr.setRequestHeader('X-Requested-With', 'toString' );</span></code></td>
+<td class="ln">216</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;xhr.setRequestHeader('X-Requested-With', 'toString');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">154</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//xhr.setRequestHeader('X-Requested-With', '');//NG</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;},</span></code></td>
+<td class="ln">217</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;},</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;success: function (data) {</span></code></td>
+<td class="ln">218</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;success: function (data) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;df.resolve(data);</span></code></td>
+<td class="ln">219</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;df.resolve(data);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">220</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;})</span></code></td>
+<td class="ln">221</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;})</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.fail(function (jqXHR, msg) {</span></code></td>
+<td class="ln">222</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.fail(function (jqXHR, msg) {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (verbose) console.log("fail", msg);</span></code></td>
+<td class="ln">223</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (verbose) console.log("fail", msg);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+<td class="ln">224</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return df.promise();</span></code></td>
+<td class="ln">225</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return df.promise();</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">226</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">165</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">227</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr valign="top">
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;if (typeof jQuery !== 'function') {</span></code></td>
+<td class="ln">228</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;if (typeof jQuery !== 'function') {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var d = document;</span></code></td>
+<td class="ln">229</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var d = document;</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">168</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var s = d.createElement('script');</span></code></td>
+<td class="ln">230</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var s = d.createElement('script');</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;s.src = '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js';</span></code></td>
+<td class="ln">231</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;s.src = '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js';</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;s.onload = e =&gt; { init(null); }</span></code></td>
+<td class="ln">232</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;s.onload = e =&gt; { init(null); }</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">171</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;d.body.appendChild(s);</span></code></td>
+<td class="ln">233</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;d.body.appendChild(s);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">172</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;} else {</span></code></td>
+<td class="ln">234</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;} else {</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;init(null);</span></code></td>
+<td class="ln">235</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;init(null);</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">236</td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr valign="top">
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">})();</span></code></td>
+<td class="ln">237</td><td class="sf3b2"><code><span class="sf3b2">})();</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
