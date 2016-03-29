@@ -38,8 +38,7 @@
     }
     var itemDelimiter = " / ";
     var total = {};
-    var year = '2016';
-    var nyear = 2016;
+    var year = 2016;
     var all = false;
     function init(num) {
         if (typeof num !== 'number') {
@@ -57,38 +56,40 @@
                 textAlign: 'center',
                 paddingTop: '15em'
             }).attr('id', '___overlay').text('Amazonいくら使った？').appendTo('body');
-            year = window.prompt('何年分の注文を集計しますか？\n - 半角数字4桁で入力してください\n - 全期間を集計する場合は「all」と入力します', year);
-            if (year === 'all') {
+            var inp = window.prompt('何年分の注文を集計しますか？\n - 半角数字4桁で入力してください\n - 全期間を集計する場合は「all」と入力します', year.toString());
+            if (inp === 'all') {
                 all = true;
                 year = jQuery('div.top-controls select option:last').val().match(/[0-9]/g).join('');
             }
-            else if (!/^[0-9]{4}$/.test(year)) {
+            else if (!/^[0-9]{4}$/.test(inp)) {
                 alert('正しい数値を入力してください');
                 $('#___overlay').remove();
                 return false;
             }
-            nyear = Number(year);
+            else {
+                year = Number(inp);
+            }
         }
         // 第二引数を true にすると各商品とかエラーを逐一表示する
         var progress = load(num, false);
-        $('#___overlay').text(nyear + '年の集計中…  / ' + (num + 1) + 'ページ目');
+        $('#___overlay').text(year.toString() + '年の集計中…  / ' + (num + 1) + 'ページ目');
         progress.done(function (results) {
-            if (typeof total[nyear] === 'undefined') {
-                total[nyear] = results;
+            if (typeof total[year] === 'undefined') {
+                total[year] = results;
             }
             else {
-                total[nyear] = total[nyear].concat(results);
+                total[year] = total[year].concat(results);
             }
             init(num + 1);
         }).fail(function () {
-            if (all && new Date().getFullYear() > nyear) {
-                nyear++;
+            if (all && new Date().getFullYear() > year) {
+                year++;
                 init(0);
             }
             else {
                 var _total = 0;
                 var _content = "";
-                jQuery.each(total, function (nyear, results) {
+                jQuery.each(total, function (year, results) {
                     var yen = 0;
                     jQuery.each(results, function () {
                         yen += this.price;
@@ -132,7 +133,10 @@
                     items.push(item);
                 });
                 var priceText = jQuery(box.find('div.order-info span.value')[1]).text();
-                var price = Number(priceText.match(/[0-9]/g).join(''));
+                var price = 0;
+                if (priceText.match(/[0-9]/g) != null) {
+                    price = Number(priceText.match(/[0-9]/g).join(''));
+                }
                 if (verbose)
                     console.log(item, price);
                 results.push({ 'date': dateText, 'items': items, 'price': price });
@@ -160,7 +164,10 @@
             });
         });
         var priceText = jQuery(dom).find('div.a-first div.a-fixed-right-grid-inner div.a-span-last span.a-text-bold').text();
-        var price = Number(priceText.match(/[0-9]/g).join(''));
+        var price = 0;
+        if (priceText.match(/[0-9]/g) != null) {
+            price = Number(priceText.match(/[0-9]/g).join(''));
+        }
         if (verbose)
             console.log(item, price);
         results.push({ 'date': dateText, 'items': items, 'price': price });
@@ -181,25 +188,43 @@
                 });
                 return df2.promise();
             };
-            var dlist = [];
-            for (var _i = 0; _i < lnks.length; _i++) {
-                var url = lnks[_i];
-                dlist.push(dfunc(url));
+            if (lnks.length > 0) {
+                var dlist = [];
+                for (var _i = 0; _i < lnks.length; _i++) {
+                    var url = lnks[_i];
+                    dlist.push(dfunc(url));
+                }
+                $('#___overlay').text(year.toString() + '年の集計中…  / ' + (num + 1) + 'ページ目（サブ' + lnks.length + '）');
+                var dwhen = jQuery.when.apply(null, dlist);
+                dwhen.done(function () {
+                    if (results.length <= 0) {
+                        df.reject();
+                    }
+                    else {
+                        df.resolve(results);
+                    }
+                })
+                    .fail(function () {
+                    $('#___overlay').text(year.toString() + '年の集計中…  / ' + (num + 1) + 'ページ目（サブ 失敗）');
+                    setTimeout(function () {
+                        if (verbose)
+                            console.log("fail");
+                    }, 500);
+                });
             }
-            var dwhen = jQuery.when.apply(null, dlist);
-            dwhen.done(function () {
+            else {
                 if (results.length <= 0) {
                     df.reject();
                 }
                 else {
                     df.resolve(results);
                 }
-            });
+            }
         });
         return df.promise();
     }
     function get(num, verbose) {
-        var url = 'https://www.amazon.co.jp/gp/css/order-history?digitalOrders=1&unifiedOrders=1&orderFilter=year-' + year + '&startIndex=' + num * 10;
+        var url = 'https://www.amazon.co.jp/gp/css/order-history?digitalOrders=1&unifiedOrders=1&orderFilter=year-' + year.toString() + '&startIndex=' + num * 10;
         return get_url(url, verbose);
     }
     function get_url(strUrl, verbose) {
